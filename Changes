@@ -1,6 +1,8 @@
 Revision history for Perl extension Web-Library
 
 {{$NEXT}}
+
+0.05  2013-08-11 19:54:37 CEST
     [Improvements]
         - Now works for Dist::Milla-based distribution wrappers that don't have
           a Makefile.PL but a dist.ini
