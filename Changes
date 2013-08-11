@@ -1,6 +1,8 @@
 Revision history for Perl extension Web-Library
 
 {{$NEXT}}
+
+0.06  2013-08-12 01:17:47 CEST
     [Improvements]
         - cpanfile: require Test::Differences
 
