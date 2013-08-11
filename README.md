@@ -47,8 +47,8 @@ Web::Library itself is a manager for those libraries. A web application that
 wishes to use one or more client-side libraries can tell Web::Library to
 include either the latest or a specific version of those libraries. These
 managed libraries can then be used as static files with web application
-frameworks. In the case of [Catalyst](https://metacpan.org/module/Catalyst) you might use
-[Catalyst::Plugin::Static::Simple](https://metacpan.org/module/Catalyst::Plugin::Static::Simple) as shown in the synopsis.
+frameworks. In the case of [Catalyst](http://search.cpan.org/perldoc?Catalyst) you might use
+[Catalyst::Plugin::Static::Simple](http://search.cpan.org/perldoc?Catalyst::Plugin::Static::Simple) as shown in the synopsis.
 
 Web::Library is a singleton object, so you can add client-side libraries in
 different parts of your application. For example, you might have common
@@ -73,7 +73,7 @@ permissive licenses.
     - name
 
         The name of the client-side library. The manager will try to load the
-        `Web::Library::$name` class. For example, [Web::Library::Bootstrap](https://metacpan.org/module/Web::Library::Bootstrap) is a
+        `Web::Library::$name` class. For example, [Web::Library::Bootstrap](http://search.cpan.org/perldoc?Web::Library::Bootstrap) is a
         distribution wrapper for Twitter Bootstrap.
 
     - version
@@ -86,7 +86,7 @@ permissive licenses.
 - include\_paths
 
     Client-side library files are installed as shared files as described in
-    [File::ShareDir](https://metacpan.org/module/File::ShareDir). The `include_paths` method returns the absolute paths to
+    [File::ShareDir](http://search.cpan.org/perldoc?File::ShareDir). The `include_paths` method returns the absolute paths to
     shared directories for all managed libraries.
 
     Returns a list in list context and an array reference in scalar context.
@@ -107,7 +107,7 @@ This is convenient, but it's only intended for some basic default set of CSS
 and JavaScript files. For example, if the library provides responsive versions
 or other customized versions, you can still use them by writing the HTML tags
 manually. A list of which files are included for each version is found in the
-documentation of the wrapper distributions like [Web::Library::Bootstrap](https://metacpan.org/module/Web::Library::Bootstrap).
+documentation of the wrapper distributions like [Web::Library::Bootstrap](http://search.cpan.org/perldoc?Web::Library::Bootstrap).
 
 - css\_assets\_for
 
@@ -180,11 +180,11 @@ JavaScript and image files.
 
 # SEE ALSO
 
-- [Web::Library::jQuery](https://metacpan.org/module/Web::Library::jQuery)
-- [Web::Library::jQueryUI](https://metacpan.org/module/Web::Library::jQueryUI)
-- [Web::Library::Bootstrap](https://metacpan.org/module/Web::Library::Bootstrap)
-- [Web::Library::DataTables](https://metacpan.org/module/Web::Library::DataTables)
-- [Web::Library::UnderscoreJS](https://metacpan.org/module/Web::Library::UnderscoreJS)
+- [Web::Library::jQuery](http://search.cpan.org/perldoc?Web::Library::jQuery)
+- [Web::Library::jQueryUI](http://search.cpan.org/perldoc?Web::Library::jQueryUI)
+- [Web::Library::Bootstrap](http://search.cpan.org/perldoc?Web::Library::Bootstrap)
+- [Web::Library::DataTables](http://search.cpan.org/perldoc?Web::Library::DataTables)
+- [Web::Library::UnderscoreJS](http://search.cpan.org/perldoc?Web::Library::UnderscoreJS)
 
 # AUTHORS
 
