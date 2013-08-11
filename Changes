@@ -1,6 +1,8 @@
 Revision history for Perl extension Web-Library
 
 {{$NEXT}}
+
+0.03  2013-08-11 19:23:45 CEST
     [Improvements]
         - Converted the distribution to use Dist::Milla
         - library_ok(): also output version number
