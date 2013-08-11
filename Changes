@@ -1,6 +1,8 @@
 Revision history for Perl extension Web-Library
 
 {{$NEXT}}
+
+0.04  2013-08-11 19:28:19 CEST
     - first release with Dist::Milla
 
 0.03  2013-08-11 19:23:45 CEST
