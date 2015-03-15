@@ -1,6 +1,5 @@
 package Web::Library::Provider;
 use Moose::Role;
-use 5.14.0;
 use File::Spec;
 use File::ShareDir ();
 use Cwd qw(abs_path);
@@ -26,7 +25,9 @@ sub dist_dir {
 
 sub dist_name {
     my $self = shift;
-    ref($self) =~ s/::/-/gr;
+    my $ref  = ref $self;
+    $ref     =~ s/::/-/g;
+    return $ref;
 }
 
 sub get_dir_for {

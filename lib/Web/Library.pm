@@ -32,7 +32,8 @@ sub library_map {
     my %lib_by_name = map { $_->name => $_ } $self->all_libraries;
     my @result;
     for my $lib (@libs) {
-        my $item = $lib_by_name{$lib} // die "unknown library [$lib]";
+        my $item = $lib_by_name{$lib};
+        die "unknown library [$lib]" unless defined $item;
         local $_ = $item;    # so you can use $_ as well as $_[0] in $code
         push @result, $code->($item);
     }

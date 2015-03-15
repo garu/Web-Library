@@ -4,7 +4,8 @@ requires qw(version_map);
 
 sub version_map_look_up {
     my ($self, $map, $version, $type) = @_;
-    my $submap = $map->{$version} // $map->{default};
+    my $submap = $map->{$version};
+    $submap = $map->{default} unless defined $submap;
     @{ $submap->{$type} };
 }
 
