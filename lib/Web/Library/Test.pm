@@ -48,7 +48,12 @@ sub include_path_ok {
                 $root = abs_path($root);
                 my @inc = get_manager()->include_paths;
                 is scalar(@inc), 1, 'there is only one include path';
-                like $inc[0], qr!^$root/.*\Q$version\E$!, 'include path';
+                if (File::Spec->case_tolerant()) {
+                    like abs_path($inc[0]), qr!^$root/.*\Q$version\E$!i, 'include path';
+                }
+                else {
+                    like $inc[0], qr!^$root/.*\Q$version\E$!, 'include path';
+                }
                 last;
             }
             $old_root = $root;
